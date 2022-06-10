@@ -1,0 +1,385 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+        margin: 0px 32px 0px 32px;
+}
+
+
+.music-player-slider {
+            overflow: hidden;
+    width: auto;
+    height: 375px;
+    display: flex;
+    padding-top: 104px;
+        }
+
+/* ----- slideshow stylings ----- */
+        .slideshow {
+            height: 100%;
+            overflow: hidden; 
+            position: relative;
+        }
+        /* slideshow images stylings */
+        .slideshow-wrapper {
+            display: flex;
+            width: 400%;
+            height: 100%;
+            position: relative;
+            animation: slideshow 20s infinite;
+         }
+        /* slider image  width and height */
+        .slide {
+            width: 100%;
+            height: 100%;
+        }
+        .slide-img {
+           /* width: 100%;
+            height: 100%;*/
+           /* object-fit: cover; */
+           background-size: cover;
+           width: 100%;
+           height: 100%
+        }
+        /*Animation */
+        @keyframes slideshow {
+            0%  { left: 0; }
+            10% { left: 0; }
+            15% { left: -100%; }
+            25% { left: -100%; }
+            30% { left: -200%; }
+            40% { left: -200%; }
+            45% { left: -300%; }
+            55% { left: -300%; }
+            60% { left: -200%; }
+            70% { left: -200%; }
+            75% { left: -100%; }
+            85% { left: -100%; }
+            90% { left: 0%; }
+        }
+       
+  
+        /* ----- carousel control buttons stylings ----- */
+        .slide-btn {
+            background-color: #bbb;
+            border-radius: 50%;
+            border: .2rem solid #d38800;
+            width: 1.2rem;
+            height: 1.2rem;
+            outline: none;
+            cursor: pointer;
+            position: absolute;
+            bottom: 3%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 70;
+        }
+      
+        .slide-btn-1 {
+            left: 45%;
+        }
+        .slide-btn-2 {
+            left: 50%;
+        }
+        .slide-btn-3 {
+            left: 55%;
+        }
+        .slide-btn-4 {
+            left: 60%;
+        }
+        .slide-btn-1:focus~.slideshow-wrapper {
+            animation: none;
+            left: 0;
+        }
+        .slide-btn-2:focus~.slideshow-wrapper {
+            animation: none;
+            left: -100%;
+        }
+        .slide-btn-3:focus~.slideshow-wrapper {
+            animation: none;
+            left: -200%;
+        }
+        .slide-btn-4:focus~.slideshow-wrapper {
+            animation: none;
+            left: -300%;
+        }
+        .slide-btn:focus {
+            background-color: #308d46;
+        }
+        
+.main-container-left{
+    display: flex;
+    flex-direction: row;
+
+    
+}
+        /* Latest release */
+         .sub-container-left{
+            display: flex;
+           flex-direction: column;
+            width: 140%;
+           margin: 10px 60px 10px 0px;
+         }
+         .release-container{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+         }
+
+         .sub-container-left h3{
+            color: white;
+            font-size: 1.1rem;
+    font-weight: 700;
+            margin: 10px 10px 10px 0px;
+         } 
+
+         .release-item{
+            display: flex;
+            margin: 17px 2px 0px 0px;
+          }
+
+      
+
+        .release-item img{
+            width: auto;
+            height: 130px;
+         }
+         .release-item .release-details{
+           align-self: center;
+         }
+          .release-item .release-details h3{
+           margin-left: 10px;
+         }
+         .release-item .release-details p{
+           position: relative;
+            right: -10%;
+            color: lightslategrey;
+         }
+
+         .release-item .latest-release-options{
+               margin-left: 113px;
+         }
+          .release-item .latest-release-options i{
+           color: white;
+         }
+
+          .release-item .latest-release-options p{
+          position: relative;
+    right: 24%;
+    color: lightslategrey;
+         }
+
+
+/* Artist main container */
+
+.popular-artist{
+   display: flex;
+   flex-direction: column;
+}
+
+ .popular-artist .artist-container{
+   display: flex;
+   flex-direction: row;
+  justify-content: space-between;
+
+   
+}
+
+ .popular-artist .artist{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+  .popular-artist .artist  img{
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+}
+
+  .popular-artist .artist #singer-name{
+   
+    color: white;
+}
+
+.radio-stations{
+     display: flex;
+   flex-direction: column;
+   background-color: #101743;
+   margin-top: 2rem;
+
+}
+
+.radio-stations .artist-container{
+   display: flex;
+
+   padding: 9px;
+}
+
+ .radio-stations .artist{
+      margin-right: 21px;
+}
+.radio-stations .artist0{
+    margin-right: 16px;
+    margin-left: 16px;
+}
+  .radio-stations .artist  img{
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    
+     filter: blur(0.9px);
+    
+}
+
+  .radio-stations .artist #singer-name{
+   position: absolute;
+ bottom: -44%;
+ margin-left: 1.2rem;
+    color: white;
+}
+
+
+/* genre */
+
+.genre-container {
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.genre-img-container {
+    width: 32%;
+    height: 9rem;
+    background-image: url(../assets/genre/party.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.genre-img-container:hover {
+    background-size: 120% 120%;
+}
+
+.genre-img-container p {
+    color: #FAFAFB;
+    text-align: center;
+    font-size: 1.3rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.genre-img-2 {
+    background-image: url("../assets/genre/electronic.jpg");
+}
+
+.genre-img-3 {
+    background-image: url("../assets/genre/road-trip.jpg");
+}
+
+/* latest-english */
+
+.latest-english-container {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.latest-english-header {
+    width: 100%;
+}
+
+.latest-english-header p {
+    color: #CECFD3;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.latest-english-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.7rem;
+}
+
+.latest-english-card-container {
+    width: 14%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.latest-english-card-container img {
+    width: 100%;
+}
+
+.latest-english-card-container p {
+    color: #FFFEFE;
+    padding-top: 5px;
+    font-size: 0.7rem;
+}
+
+
+/* Audio Player */
+.audio-section{
+     width: 100%;
+    position: fixed;
+      bottom: 0px;
+      display: flex;
+      justify-content: space-between;
+}
+.audio-item{
+    width: 100%;
+
+}
+
+.fa-play{
+    position: relative;
+    bottom: 248%;
+    left: 43%;
+    color: white;
+
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 13px;
+    }
+    
+    .main-container {
+      padding: 0;
+      margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    main {
+        width: 100%;
+    }
+    .playlist {
+        display: none;
+    }
+    .music-player-slider{
+        width: 100%;
+       
+
+    }
+      
+    
+}
