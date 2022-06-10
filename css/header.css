@@ -1,0 +1,122 @@
+
+
+/* css for global  style*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body style */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0C1027;
+    padding-bottom: 100px;
+}
+
+/* Site Header */
+
+.music-player-header{
+	padding: 35px 73px 60px 0px;
+	display: flex;
+	width: 100%;
+	position: fixed;
+    z-index: 1;
+     height: 38px;
+     color: white;
+
+
+}
+
+/* header left side */
+
+.music-player-header .music-player-header-left{
+	display: flex;
+	align-items: center;
+	
+}
+
+/*logo*/
+
+.music-player-header .music-player-header-left img{
+	width: 200px;
+	height: auto;
+	margin: 25px 0px 0px 38px
+}
+
+/* favorites */
+.music-player-header .music-player-header-left p{
+	text-decoration: none;
+	color: white;
+	margin-left: 60px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+/* header right side */
+.music-player-header .music-player-header-right{
+	display: flex;
+	align-items: center;
+	 margin-left: 480px;
+	 justify-content: center;
+}
+
+/* Serach bar form */
+.music-player-header .music-player-header-right form{
+ background-color: #0C1027;
+ padding: 8px 5px 8px 5px;
+	display: flex;
+	border-radius: 15px;
+	border: 1px solid darkslateblue;
+	opacity: 0.6;
+	width: 334px;
+}
+
+/* serach bar icon */
+.music-player-header .music-player-header-right form  .fa-magnifying-glass{
+	padding: 5px 3px 5px 0px;
+	align-self: center;
+
+} 
+
+/* search bar input */
+.music-player-header .music-player-header-right form input{
+	 color: white;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	font-size: 16px;
+
+}
+
+/* Serach bar microphone icon */
+.music-player-header-right .fa-microphone{
+	padding: 5px 5px 0px 92px;
+}
+
+/* Notification icon */
+.music-player-header-right .fa-bell{
+	padding: 5px 5px 0px 30px;
+	font-size: 25px;
+}
+
+/* Notification icon container */
+.music-player-header-right .notification{
+	color: red;
+	position: relative;
+	padding-bottom: 9px;
+    left: -3%;
+}
+
+/* User profile image */
+.music-player-header-right img{
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	background-size: cover;
+    margin-left: 17px;
+}
+
+
+

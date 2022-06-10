@@ -1,0 +1,110 @@
+.playlist{
+
+    width: 83%;
+    margin-bottom: 2rem;
+
+
+}
+
+.song-queue {
+    font-size: 1.1rem;
+    font-weight: 700;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.song-queue  h3 {
+  color: white;
+  margin: 15px 0px 10px 0px;
+  
+}
+.song-queue label {
+    font-size: 0.8rem;
+    color: #51E2C2;
+}
+
+.queue-btn-container {
+    position: relative;
+    margin-left: 283px;
+}
+
+
+.song-queue input {
+    display: none;
+}
+
+.queue-btn-dropdown {
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    top: 1.5rem;
+    left: -4rem;
+    background-color: white;
+    text-align: center;
+    transition: all 0.2s linear;
+}
+
+.queue-btn-dropdown a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: black;
+}
+
+
+
+/* on clicking the label dropdown will appear, make height non zero */
+
+#mycheckbox:checked~div {
+    height: 4.7rem;
+    padding: 0.3rem;
+    z-index: 1;
+    
+}
+
+.queue-elements{
+    position: relative;
+    
+
+}
+.queue-item{
+    display: flex;
+    background-color: #171B2A;
+    width: 455px;
+    margin-bottom: 1rem;
+}
+.queue-item img{
+    width: 80px;
+    height: 80px;
+    border-radius: 22%;
+        padding: 7px;
+
+}
+.queue-item #playlist-id{
+    align-self: center;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.queue-item #song-name{
+    align-self: flex-start;
+    margin-top: 10px;
+    color: white;
+}
+.queue-item #singer-name{
+    position: relative;
+    align-self: flex-end;
+    right: 14%;
+    color: lightslategrey;
+    margin-bottom: 8px;
+}
+
+.queue-item .fa-heart{
+    font-size: 19px;
+    color: white;
+    position: relative;
+    align-self: center;
+    margin-left: 125px;
+}
