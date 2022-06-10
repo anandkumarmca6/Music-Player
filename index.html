@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Music Player</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/main-layout.css">
+	<link rel="stylesheet" type="text/css" href="css/side-layout.css">
+</head>
+<body>
+	<!--  Header Section - Top  -->
+    <header class="music-player-header">
+    	<section class="music-player-header-left">
+    		<img src="assets/site-logo.png" alt="music-player-logo">
+    		<p href="#">Favourites</p>
+    	</section>
+    	<section class="music-player-header-right">
+    		<form>
+    		<i class="fa-solid fa-magnifying-glass"></i>
+    		<input type="text" name="search" id="search" placeholder="Search" />
+    		<i class="fa-solid fa-microphone"></i>
+    	</form>
+    	<i class="fa-solid fa-bell"></i>
+<div class="notification">&#9679;</div>
+<img src="assets/user-profile.png" alt="user-profile"/>
+    	</section>
+    	
+    	
+    </header>
+
+    <main>
+      <div class="main-container">
+        <!--  Music player Carousel -->
+    	<section class="music-player-slider">
+    			 <div class="slideshow">
+                <!-- carousel control buttons -->
+                <button class="slide-btn slide-btn-1"></button>
+                <button class="slide-btn slide-btn-2"></button>
+                <button class="slide-btn slide-btn-3"></button>
+                <button class="slide-btn slide-btn-4"></button>
+                <!-- carousel wrapper which contains all images -->
+                <div class="slideshow-wrapper">
+                    <div class="slide">
+                        <img class="slide-img"
+                            src=
+"assets/slider/slider-1.jpg">
+                    </div>
+                    <div class="slide">
+                        <img class="slide-img"
+                            src=
+"assets/slider/slider-2.jpg">
+                    </div>
+                    <div class="slide">
+                        <img class="slide-img" src=
+"assets/slider/slider-3.jpg">
+                    </div>
+                    <div class="slide">
+                        <img class="slide-img" src=
+"assets/slider/slider-4.jpg">
+                    </div>
+                </div>
+            </div>
+    	</section>
+
+        <div class="main-container-left">
+    	<section class="sub-container-left">
+
+            <!-- Latest Release section -->
+    		<h3>Latest Release</h3>
+    		<div class="release-container">
+    		<div class="release-item">
+    			<img src="assets/latest-release/release1.jpg">
+    			<div class="release-details">
+    			<h3>Onism</h3>
+    			<p>MAY 11, 2022</p>
+    		</div>
+    		<div class="latest-release-options">
+    			<i class="fa-solid fa-ellipsis"></i>
+    			<p>4:44</p>
+    		</div>
+    		</div>
+    		<div class="release-item">
+    			<img src="assets/latest-release/release3.jpg">
+    			<div class="release-details">
+    			<h3>Onism</h3>
+    			<p>MAY 11, 2022</p>
+    		</div>
+    		<div class="latest-release-options">
+    			<i class="fa-solid fa-ellipsis"></i>
+    			<p>4:44</p>
+    		</div>
+    		</div>
+    		<div class="release-item">
+    			<img src="assets/latest-release/release3.jpg">
+    			<div class="release-details">
+    			<h3>Onism</h3>
+    			<p>MAY 11, 2022</p>
+    		</div>
+    		<div class="latest-release-options">
+    			<i class="fa-solid fa-ellipsis"></i>
+    			<p>4:44</p>
+    		</div>
+    		</div>
+    		<div class="release-item">
+    			<img src="assets/latest-release/release4.jpg">
+    			<div class="release-details">
+    			<h3>Onism</h3>
+    			<p>MAY 11, 2022</p>
+    		</div>
+    		<div class="latest-release-options">
+    			<i class="fa-solid fa-ellipsis"></i>
+    			<p>4:44</p>
+    		</div>
+    		</div>
+    	</div>
+
+        <!-- Popular Artists section -->
+
+    <section class="popular-artist">
+        <h3>Popular Artists</h3>
+        <div class="artist-container">
+        <div class="artist">
+            <img src="assets/artist/artist1.webp" alt="artist"/>
+            <div>
+                <a  href="artist.html"><i class="fa-solid fa-play"></i></a>
+            <span id="singer-name">Arjit Singh</span>
+        </div>
+        </div>
+         <div class="artist">
+            <img src="assets/artist/artist2.webp" alt="artist"/>
+             <div>
+                  <a  href="artist.html"><i class="fa-solid fa-play"></i></a>
+            <span id="singer-name">Arjit Singh</span>
+        </div>
+        </div>
+         <div class="artist">
+            <img src="assets/artist/artist3.webp" alt="artist"/>
+             <div>
+                <a  href="artist.html"><i class="fa-solid fa-play"></i></a>
+            <span id="singer-name">Arjit Singh</span>
+        </div>
+        </div>
+         <div class="artist">
+            <img src="assets/artist/artist4.webp" alt="artist"/>
+             <div>
+                <a  href="artist.html"><i class="fa-solid fa-play"></i></a>
+            <span id="singer-name">Arjit Singh</span>
+        </div>
+        </div>
+         <div class="artist">
+            <img src="assets/artist/artist5.webp" alt="artist"/>
+             <div>
+                <a  href="artist.html"><i class="fa-solid fa-play"></i></a>
+            <span id="singer-name">Arjit Singh</span>
+        </div>
+        </div>
+         <div class="artist">
+            <img src="assets/artist/artist6.webp" alt="artist"/>
+             <div>
+                <a  href="artist.html"><i class="fa-solid fa-play"></i></a>
+            <span id="singer-name">Arjit Singh</span>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Radio stations -->
+    <section class="radio-stations">
+        <div class="artist-container">
+        <div class="artist0">
+            <img src="assets/radio/radio8.png" alt="artist"/>
+            <div>
+                <span id="singer-name"></span>
+        </div>
+        </div>
+         <div class="artist">
+            <img src="assets/radio/radio1.webp" alt="artist"/>
+             <div>
+            <span id="singer-name">Love</span>
+        </div>
+        </div>
+         <div class="artist">
+            <img src="assets/radio/radio2.webp" alt="artist"/>
+             <div>
+            <span id="singer-name">Retro</span>
+        </div>
+        </div>
+         <div class="artist">
+            <img src="assets/radio/radio3.webp" alt="artist"/>
+             <div>
+            <span id="singer-name">Chill</span>
+        </div>
+        </div>
+         <div class="artist">
+            <img src="assets/radio/radio4.webp" alt="artist"/>
+             <div>
+            <span id="singer-name">Workout</span>
+        </div>
+        </div>
+         <div class="artist">
+            <img src="assets/radio/radio5.webp" alt="artist"/>
+             <div>
+            <span id="singer-name">Rock</span>
+        </div>
+        </div>
+         <div class="artist">
+            <img src="assets/radio/radio6.webp" alt="artist"/>
+             <div>
+            <span id="singer-name">Pop</span>
+        </div>
+        </div>
+        
+         
+    </div>
+    </section>
+
+<!-- Genre -->
+<section class="genre-container">
+                    <div class="genre-img-container">
+                        <p>Party</p>
+                    </div>
+
+                    <div class="genre-img-container genre-img-2">
+                        <p>Electronic</p>
+                    </div>
+
+                    <div class="genre-img-container genre-img-3">
+                        <p>Road Trip</p>
+                    </div>
+                </section>
+    	
+
+
+<!-- Latest english section -->
+
+     <div class="latest-english-container">
+                    <div class="latest-english-header">
+                        <p>Latest English</p>
+                    </div>
+
+                    <div class="latest-english-content">
+                        <div class="latest-english-card-container">
+                            <img src="assets/songs/queue-04.jpg" />
+                            <p>Onism</p>
+                            <p>MAY 11, 2022</p>
+                        </div>
+                        <div class="latest-english-card-container">
+                            <img src="assets/songs/queue-05.jpg" />
+                            <p>Onism</p>
+                            <p>MAY 11, 2022</p>
+                        </div>
+                        <div class="latest-english-card-container">
+                            <img src="assets/songs/queue-02.jpg" />
+                            <p>Onism</p>
+                            <p>MAY 11, 2022</p>
+                        </div>
+                        <div class="latest-english-card-container">
+                            <img src="assets/songs/queue-03.png" />
+                            <p>Onism</p>
+                            <p>MAY 11, 2022</p>
+                        </div>
+                        <div class="latest-english-card-container">
+                            <img src="assets/songs/queue-04.jpg" />
+                            <p>Onism</p>
+                            <p>MAY 11, 2022</p>
+                        </div>
+                        <div class="latest-english-card-container">
+                            <img src="assets/songs/queue-03.png" />
+                            <p>Onism</p>
+                            <p>MAY 11, 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Latest Hindi Section -->
+                <div class="latest-english-container">
+                    <div class="latest-english-header">
+                        <p>Latest Hindi</p>
+                    </div>
+
+                    <div class="latest-english-content">
+                        <div class="latest-english-card-container">
+                            <img src="assets/songs/queue-04.jpg" />
+                            <p>Onism</p>
+                            <p>MAY 11, 2022</p>
+                        </div>
+                        <div class="latest-english-card-container">
+                            <img src="assets/songs/queue-05.jpg" />
+                            <p>Onism</p>
+                            <p>MAY 11, 2022</p>
+                        </div>
+                        <div class="latest-english-card-container">
+                            <img src="assets/songs/queue-02.jpg" />
+                            <p>Onism</p>
+                            <p>MAY 11, 2022</p>
+                        </div>
+                        <div class="latest-english-card-container">
+                            <img src="assets/songs/queue-03.png" />
+                            <p>Onism</p>
+                            <p>MAY 11, 2022</p>
+                        </div>
+                        <div class="latest-english-card-container">
+                            <img src="assets/songs/queue-04.jpg" />
+                            <p>Onism</p>
+                            <p>MAY 11, 2022</p>
+                        </div>
+                        <div class="latest-english-card-container">
+                            <img src="assets/songs/queue-03.png" />
+                            <p>Onism</p>
+                            <p>MAY 11, 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                </section>
+    <!-- My playlist section -->
+
+ <div class="playlist">
+            <div class="song-queue">
+                <h3>My Playlist</h3>
+               <div class="queue-btn-container">
+                        <label for="mycheckbox">Queue <span><i class="fas fa-angle-down"></i></span></label>
+                        <input type="checkbox" id="mycheckbox">
+                        <div class="queue-btn-dropdown">
+                            <a href="">Playlists</a>
+                            <hr>
+                            <a href="">Favourite Songs</a>
+                        </div>
+                    </div>
+
+
+                
+            </div>
+             <div class="queue-elements">
+                    <div class="queue-item">
+                        <span id="playlist-id">01</span>
+                         <img src="assets/latest-release/release1.jpg">
+                        <span id="song-name">Designer</span>
+                        <span id="singer-name">Justing Bieber</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                     <div class="queue-item">
+                        <span id="playlist-id">01</span>
+                         <img src="assets/latest-release/release1.jpg">
+                        <span id="song-name">Designer</span>
+                        <span id="singer-name">Justing Bieber</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                     <div class="queue-item">
+                        <span id="playlist-id">01</span>
+                         <img src="assets/latest-release/release1.jpg">
+                        <span id="song-name">Designer</span>
+                        <span id="singer-name">Justing Bieber</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                     <div class="queue-item">
+                        <span id="playlist-id">01</span>
+                         <img src="assets/latest-release/release1.jpg">
+                        <span id="song-name">Designer</span>
+                        <span id="singer-name">Justing Bieber</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                     <div class="queue-item">
+                        <span id="playlist-id">01</span>
+                         <img src="assets/latest-release/release1.jpg">
+                        <span id="song-name">Designer</span>
+                        <span id="singer-name">Justing Bieber</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                     <div class="queue-item">
+                        <span id="playlist-id">01</span>
+                         <img src="assets/latest-release/release1.jpg">
+                        <span id="song-name">Designer</span>
+                        <span id="singer-name">Justing Bieber</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                     <div class="queue-item">
+                        <span id="playlist-id">01</span>
+                         <img src="assets/latest-release/release1.jpg">
+                        <span id="song-name">Designer</span>
+                        <span id="singer-name">Justing Bieber</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                     <div class="queue-item">
+                        <span id="playlist-id">01</span>
+                         <img src="assets/latest-release/release1.jpg">
+                        <span id="song-name">Designer</span>
+                        <span id="singer-name">Justing Bieber</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                     <div class="queue-item">
+                        <span id="playlist-id">01</span>
+                         <img src="assets/latest-release/release1.jpg">
+                        <span id="song-name">Designer</span>
+                        <span id="singer-name">Justing Bieber</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                     <div class="queue-item">
+                        <span id="playlist-id">01</span>
+                         <img src="assets/latest-release/release1.jpg">
+                        <span id="song-name">Designer</span>
+                        <span id="singer-name">Justing Bieber</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                     <div class="queue-item">
+                        <span id="playlist-id">01</span>
+                         <img src="assets/latest-release/release1.jpg">
+                        <span id="song-name">Designer</span>
+                        <span id="singer-name">Justing Bieber</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                     <div class="queue-item">
+                        <span id="playlist-id">01</span>
+                         <img src="assets/latest-release/release1.jpg">
+                        <span id="song-name">Designer</span>
+                        <span id="singer-name">Justing Bieber</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+        </div>
+
+
+    </div>
+    
+ <footer>
+         <div class="audio-section">
+            
+            <audio controls autoplay class="audio-item"  >
+                 <source src="song.mp3" type="audio/mp3">
+  Your browser does not support the audio tag.
+            </audio>
+         </div>  
+
+        </footer>
+
+    	</div>
+
+    </main>
+
+   
+
+</body>
+</html>
