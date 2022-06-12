@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Music Player</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" type="text/css" href="css/header.css">
-	<link rel="stylesheet" type="text/css" href="css/main-layout.css">
-	<link rel="stylesheet" type="text/css" href="css/side-layout.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/main-layout.css">
+    <link rel="stylesheet" type="text/css" href="css/side-layout.css">
 </head>
 <body>
-	<!--  Header Section - Top  -->
+    <!--  Header Section - Top  -->
     <header class="music-player-header">
-    	<section class="music-player-header-left">
-    		<img src="assets/site-logo.png" alt="music-player-logo">
-    		<p href="#">Favourites</p>
-    	</section>
-    	<section class="music-player-header-right">
-    		<form>
-    		<i class="fa-solid fa-magnifying-glass"></i>
-    		<input type="text" name="search" id="search" placeholder="Search" />
-    		<i class="fa-solid fa-microphone"></i>
-    	</form>
-    	<i class="fa-solid fa-bell"></i>
+        <section class="music-player-header-left">
+            <img src="assets/site-logo.png" alt="music-player-logo">
+            <p href="#">Favourites</p>
+        </section>
+        <section class="music-player-header-right">
+            <form>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="search" id="search" placeholder="Search" />
+            <i class="fa-solid fa-microphone"></i>
+        </form>
+        <i class="fa-solid fa-bell"></i>
 <div class="notification">&#9679;</div>
 <img src="assets/user-profile.png" alt="user-profile"/>
-    	</section>
-    	
-    	
+        </section>
+        
+        
     </header>
 
     <main>
       <div class="main-container">
         <!--  Music player Carousel -->
-    	<section class="music-player-slider">
-    			 <div class="slideshow">
+        <section class="music-player-slider">
+                 <div class="slideshow">
                 <!-- carousel control buttons -->
                 <button class="slide-btn slide-btn-1"></button>
                 <button class="slide-btn slide-btn-2"></button>
@@ -62,59 +62,183 @@
                     </div>
                 </div>
             </div>
-    	</section>
+        </section>
 
         <div class="main-container-left">
-    	<section class="sub-container-left">
+        <section class="sub-container-left">
 
             <!-- Latest Release section -->
-    		<h3>Latest Release</h3>
-    		<div class="release-container">
-    		<div class="release-item">
-    			<img src="assets/latest-release/release1.jpg">
-    			<div class="release-details">
-    			<h3>Onism</h3>
-    			<p>MAY 11, 2022</p>
-    		</div>
-    		<div class="latest-release-options">
-    			<i class="fa-solid fa-ellipsis"></i>
-    			<p>4:44</p>
-    		</div>
-    		</div>
-    		<div class="release-item">
-    			<img src="assets/latest-release/release3.jpg">
-    			<div class="release-details">
-    			<h3>Onism</h3>
-    			<p>MAY 11, 2022</p>
-    		</div>
-    		<div class="latest-release-options">
-    			<i class="fa-solid fa-ellipsis"></i>
-    			<p>4:44</p>
-    		</div>
-    		</div>
-    		<div class="release-item">
-    			<img src="assets/latest-release/release3.jpg">
-    			<div class="release-details">
-    			<h3>Onism</h3>
-    			<p>MAY 11, 2022</p>
-    		</div>
-    		<div class="latest-release-options">
-    			<i class="fa-solid fa-ellipsis"></i>
-    			<p>4:44</p>
-    		</div>
-    		</div>
-    		<div class="release-item">
-    			<img src="assets/latest-release/release4.jpg">
-    			<div class="release-details">
-    			<h3>Onism</h3>
-    			<p>MAY 11, 2022</p>
-    		</div>
-    		<div class="latest-release-options">
-    			<i class="fa-solid fa-ellipsis"></i>
-    			<p>4:44</p>
-    		</div>
-    		</div>
-    	</div>
+            <h3>Latest Release</h3>
+            <div class="release-container">
+            <div class="release-item">
+                <img src="assets/latest-release/release1.jpg">
+                <div class="release-details">
+                <h3>Onism</h3>
+                <p>MAY 11, 2022</p>
+            </div>
+            <div class="latest-release-options">
+               
+                <label for="latest-release-checkbox1"> <i class="fa-solid fa-ellipsis"></i></label>
+                                <input type="checkbox" id="latest-release-checkbox1">
+                                <div class="latest-release-dropdown">
+
+                                    <div class="links-container">
+                                        <i class="fas fa-play"></i>
+                                        <a href="">Play Now</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-plus"></i>
+                                        <a href="">Add To Queue</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-bars"></i>
+                                        <a href="">Add To Favourites</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <a href=""><span></span>Get Info</a>
+                                    </div>
+
+                                </div>
+                <p>4:44</p>
+            </div>
+            </div>
+            <div class="release-item">
+                <img src="assets/latest-release/release3.jpg">
+                <div class="release-details">
+                <h3>Onism</h3>
+                <p>MAY 11, 2022</p>
+            </div>
+            <div class="latest-release-options">
+               
+                <label for="latest-release-checkbox2"> <i class="fa-solid fa-ellipsis"></i></label>
+                                <input type="checkbox" id="latest-release-checkbox2">
+                                <div class="latest-release-dropdown">
+
+                                    <div class="links-container">
+                                        <i class="fas fa-play"></i>
+                                        <a href="">Play Now</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-plus"></i>
+                                        <a href="">Add To Queue</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-bars"></i>
+                                        <a href="">Add To Favourites</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <a href=""><span></span>Get Info</a>
+                                    </div>
+
+                                </div>
+                <p>4:44</p>
+            </div>
+            </div>
+            <div class="release-item">
+                <img src="assets/latest-release/release3.jpg">
+                <div class="release-details">
+                <h3>Onism</h3>
+                <p>MAY 11, 2022</p>
+            </div>
+            <div class="latest-release-options">
+               
+                <label for="latest-release-checkbox3"> <i class="fa-solid fa-ellipsis"></i></label>
+                                <input type="checkbox" id="latest-release-checkbox3">
+                                <div class="latest-release-dropdown">
+
+                                    <div class="links-container">
+                                        <i class="fas fa-play"></i>
+                                        <a href="">Play Now</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-plus"></i>
+                                        <a href="">Add To Queue</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-bars"></i>
+                                        <a href="">Add To Favourites</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <a href=""><span></span>Get Info</a>
+                                    </div>
+
+                                </div>
+                <p>4:44</p>
+            </div>
+            </div>
+            <div class="release-item">
+                <img src="assets/latest-release/release4.jpg">
+                <div class="release-details">
+                <h3>Onism</h3>
+                <p>MAY 11, 2022</p>
+            </div>
+            <div class="latest-release-options">
+               
+                <label for="latest-release-checkbox4"> <i class="fa-solid fa-ellipsis"></i></label>
+                                <input type="checkbox" id="latest-release-checkbox4">
+                                <div class="latest-release-dropdown">
+
+                                    <div class="links-container">
+                                        <i class="fas fa-play"></i>
+                                        <a href="">Play Now</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-plus"></i>
+                                        <a href="">Add To Queue</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-bars"></i>
+                                        <a href="">Add To Favourites</a>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="links-container">
+                                        <i class="fas fa-exclamation-circle"></i>
+                                        <a href=""><span></span>Get Info</a>
+                                    </div>
+
+                                </div>
+                <p>4:44</p>
+            </div>
+            </div>
+        </div>
 
         <!-- Popular Artists section -->
 
@@ -124,42 +248,42 @@
         <div class="artist">
             <img src="assets/artist/artist1.webp" alt="artist"/>
             <div>
-                <a  href="artist.html"><i class="fa-solid fa-play"></i></a>
+                <a  href="artist.html"><i class="fa-solid fa-play artist-play"></i></a>
             <span id="singer-name">Arjit Singh</span>
         </div>
         </div>
          <div class="artist">
             <img src="assets/artist/artist2.webp" alt="artist"/>
              <div>
-                  <a  href="artist.html"><i class="fa-solid fa-play"></i></a>
+                  <a  href="artist.html"><i class="fa-solid fa-play artist-play"></i></a>
             <span id="singer-name">Tanishk Bagchi</span>
         </div>
         </div>
          <div class="artist">
             <img src="assets/artist/artist3.webp" alt="artist"/>
              <div>
-                <a  href="artist.html"><i class="fa-solid fa-play"></i></a>
+                <a  href="artist.html"><i class="fa-solid fa-play artist-play"></i></a>
             <span id="singer-name">Pritam</span>
         </div>
         </div>
          <div class="artist">
             <img src="assets/artist/artist4.webp" alt="artist"/>
              <div>
-                <a  href="artist.html"><i class="fa-solid fa-play"></i></a>
+                <a  href="artist.html"><i class="fa-solid fa-play artist-play"></i></a>
             <span id="singer-name">Badshah</span>
         </div>
         </div>
          <div class="artist">
             <img src="assets/artist/artist5.webp" alt="artist"/>
              <div>
-                <a  href="artist.html"><i class="fa-solid fa-play"></i></a>
+                <a  href="artist.html"><i class="fa-solid fa-play artist-play"></i></a>
             <span id="singer-name">Jubin Nautiyal</span>
         </div>
         </div>
          <div class="artist">
             <img src="assets/artist/artist6.webp" alt="artist"/>
              <div>
-                <a  href="artist.html"><i class="fa-solid fa-play"></i></a>
+                <a  href="artist.html"><i class="fa-solid fa-play artist-play"></i></a>
             <span id="singer-name">Lata Mangeshkar</span>
         </div>
         </div>
@@ -230,7 +354,7 @@
                         <p>Road Trip</p>
                     </div>
                 </section>
-    	
+        
 
 
 <!-- Latest english section -->
@@ -343,7 +467,21 @@
                     </div>
                      <div class="queue-item">
                         <span id="playlist-id">01</span>
-                         <img src="assets/latest-release/release1.jpg">
+                         <img src="assets/latest-release/release2.jpg">
+                        <span id="song-name">Designer</span>
+                        <span id="singer-name">Justing Bieber</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                     <div class="queue-item">
+                        <span id="playlist-id">01</span>
+                         <img src="assets/latest-release/release3.jpg">
+                        <span id="song-name">Designer</span>
+                        <span id="singer-name">Justing Bieber</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                     <div class="queue-item">
+                        <span id="playlist-id">01</span>
+                         <img src="assets/latest-release/release4.jpg">
                         <span id="song-name">Designer</span>
                         <span id="singer-name">Justing Bieber</span>
                         <i class="fa-solid fa-heart"></i>
@@ -357,7 +495,21 @@
                     </div>
                      <div class="queue-item">
                         <span id="playlist-id">01</span>
-                         <img src="assets/latest-release/release1.jpg">
+                         <img src="assets/latest-release/release2.jpg">
+                        <span id="song-name">Designer</span>
+                        <span id="singer-name">Justing Bieber</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                     <div class="queue-item">
+                        <span id="playlist-id">01</span>
+                         <img src="assets/latest-release/release3.jpg">
+                        <span id="song-name">Designer</span>
+                        <span id="singer-name">Justing Bieber</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                     <div class="queue-item">
+                        <span id="playlist-id">01</span>
+                         <img src="assets/latest-release/release4.jpg">
                         <span id="song-name">Designer</span>
                         <span id="singer-name">Justing Bieber</span>
                         <i class="fa-solid fa-heart"></i>
@@ -371,49 +523,21 @@
                     </div>
                      <div class="queue-item">
                         <span id="playlist-id">01</span>
-                         <img src="assets/latest-release/release1.jpg">
+                         <img src="assets/latest-release/release2.jpg">
                         <span id="song-name">Designer</span>
                         <span id="singer-name">Justing Bieber</span>
                         <i class="fa-solid fa-heart"></i>
                     </div>
                      <div class="queue-item">
                         <span id="playlist-id">01</span>
-                         <img src="assets/latest-release/release1.jpg">
+                         <img src="assets/latest-release/release3.jpg">
                         <span id="song-name">Designer</span>
                         <span id="singer-name">Justing Bieber</span>
                         <i class="fa-solid fa-heart"></i>
                     </div>
                      <div class="queue-item">
                         <span id="playlist-id">01</span>
-                         <img src="assets/latest-release/release1.jpg">
-                        <span id="song-name">Designer</span>
-                        <span id="singer-name">Justing Bieber</span>
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                     <div class="queue-item">
-                        <span id="playlist-id">01</span>
-                         <img src="assets/latest-release/release1.jpg">
-                        <span id="song-name">Designer</span>
-                        <span id="singer-name">Justing Bieber</span>
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                     <div class="queue-item">
-                        <span id="playlist-id">01</span>
-                         <img src="assets/latest-release/release1.jpg">
-                        <span id="song-name">Designer</span>
-                        <span id="singer-name">Justing Bieber</span>
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                     <div class="queue-item">
-                        <span id="playlist-id">01</span>
-                         <img src="assets/latest-release/release1.jpg">
-                        <span id="song-name">Designer</span>
-                        <span id="singer-name">Justing Bieber</span>
-                        <i class="fa-solid fa-heart"></i>
-                    </div>
-                     <div class="queue-item">
-                        <span id="playlist-id">01</span>
-                         <img src="assets/latest-release/release1.jpg">
+                         <img src="assets/latest-release/release4.jpg">
                         <span id="song-name">Designer</span>
                         <span id="singer-name">Justing Bieber</span>
                         <i class="fa-solid fa-heart"></i>
@@ -435,7 +559,7 @@
 
         </footer>
 
-    	</div>
+        </div>
 
     </main>
 
